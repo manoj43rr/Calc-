@@ -23,7 +23,7 @@ nonAnnualDf = pd.DataFrame(nonAnnualData)
 
 if val is not None:
     revenueAssigned = st.number_input("Enter the Revenue Assigned:", min_value=0, value=0, step=1, format="%d")
-    percAchieved = st.slider("Adjust the percentage Achieved:", min_value=50.0, max_value=100.0, step=0.1)
+    percAchieved = st.number_input("Enter the percentage Achieved:", min_value=50.0, max_value=100.0, value=50.0, step=0.1, format="%.1f")
 
     incentive = 0.0
 
